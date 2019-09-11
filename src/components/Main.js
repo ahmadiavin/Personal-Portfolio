@@ -204,7 +204,7 @@ class Main extends React.Component {
             <br />
             I enjoy building projects from the ground up and working with a team
             to find innovative and creative solutions to technical problems. I
-            hold a AA in Business Management and I recently finished an
+            hold an AA in Business Management from St. Petersburg College and I recently finished an
             immersive 13 week bootcamp at DevMountain focusing on the SERN
             stack.
             <br />
