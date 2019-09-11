@@ -1,22 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import styled from 'styled-components'
+import aaLogo from "../images/AALogo.png"
+import {GiMaterialsScience} from 'react-icons/gi'
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
         <div className="logo">
-            <span className="icon fa-diamond"></span>
+            <IconImg><GiMaterialsScience/></IconImg> 
         </div>
         <div className="content">
             <div className="inner">
-                <h1>Dimension</h1>
-                <p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-                for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
+                <h1>Ali Ahmadiavin </h1>
+                <p> Full Stack Web Developer </p>
+                <p> Creating Stunning and Immersive Web Applications</p>
             </div>
         </div>
         <nav>
             <ul>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('intro')}}>Intro</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('work')}}>Work</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('intro')}}>Skills</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('work')}}>Projects</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('about')}}>About</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Contact</a></li>
             </ul>
@@ -30,3 +32,10 @@ Header.propTypes = {
 }
 
 export default Header
+
+const IconImg = styled.div`
+
+font-size: 4rem;
+
+
+`
