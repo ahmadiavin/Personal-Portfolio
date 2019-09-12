@@ -26,7 +26,7 @@ import SocketIO from '../images/icons/Socket.svg'
 import styledImg from '../images/icons/styled.png'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Carousel } from 'react-responsive-carousel'
-
+import { FaGithub, FaGlobe } from 'react-icons/fa'
 class Main extends React.Component {
   render() {
     let close = (
@@ -97,20 +97,17 @@ class Main extends React.Component {
               <ImgCont src={chartJS}></ImgCont>
               <a href="https://www.chartjs.org/">Chart.js</a>
             </SkillsCont>
-           
+
             {/* <SkillsCont>
               <ImgCont src={SocketIO}></ImgCont>
               <a href="https://socket.io/">Socket.io</a>
             </SkillsCont> */}
-         
+
             <SkillsCont>
               <ImgCont src={styledImg}></ImgCont>
               <a href="https://www.styled-components.com/">SC</a>
             </SkillsCont>
-
           </SkillsWrapper>
-         
-     
 
           {close}
         </article>
@@ -124,28 +121,23 @@ class Main extends React.Component {
         >
           <h2 className="major">Projects</h2>
           <span className="image main">
-          <LinkCont>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/ahmadiavin/Budgeting-Dashboard"
-              className="icon fa-github"
-              style={{
-                fontSize: 30,
-              }}
-            ></a>
-
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="http://www.minty.cash/"
-              className="icon fa-globe"
-              style={{
-                fontSize: 30,
-              }}
-            ></a>
-          </LinkCont>
-            <Carousel dynamicHeight dynamicWidth >
+            <LinkCont>
+              <HoverIcon
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/ahmadiavin/Budgeting-Dashboard"
+              >
+                <FaGithub />
+              </HoverIcon>
+              <HoverIcon
+                target="_blank"
+                rel="noopener noreferrer"
+                href="http://www.minty.cash/"
+              >
+                <FaGlobe />
+              </HoverIcon>
+            </LinkCont>
+            <Carousel dynamicHeight dynamicWidth>
               <div>
                 <img src={minty1} alt="Minty1" />
               </div>
@@ -173,7 +165,7 @@ class Main extends React.Component {
               meaningful way.
             </li>
           </ul>
-          
+
           {close}
         </article>
 
@@ -204,13 +196,14 @@ class Main extends React.Component {
             <br />
             I enjoy building projects from the ground up and working with a team
             to find innovative and creative solutions to technical problems. I
-            hold an AA in Business Management from St. Petersburg College and I recently finished an
-            immersive 13 week bootcamp at DevMountain focusing on the SERN
-            stack.
+            hold an AA in Business Management from St. Petersburg College and I
+            recently finished an immersive 13 week bootcamp at DevMountain
+            focusing on the SERN stack.
             <br />
-            <br/>
-            I'm originally from Tampa, FL but I'm currently based in the Dallas/Fort Worth area. 
-            When i'm not coding you can find me watching football, cooking up new pasta recipes, or weight lifting. 
+            <br />
+            I'm originally from Tampa, FL but I'm currently based in the
+            Dallas/Fort Worth area. When i'm not coding you can find me watching
+            football, cooking up new pasta recipes, or weight lifting.
           </p>
           {close}
         </article>
@@ -223,9 +216,15 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form name="contact" method="post"  data-netlify="true"  data-netlify-honeypot="bot-field" action="#">
-            <input type='hidden' name='bot-field'/>
-            <input type='hidden' name='form-name' value="contact" />
+          <form
+            name="contact"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            action="#"
+          >
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
@@ -308,15 +307,15 @@ const SkillsCont = styled.div`
   outline: none;
   color: white;
   text-decoration: none;
-  width:120px;
+  width: 120px;
   height: 120px;
   a {
     display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
     outline: none;
     text-decoration: none;
     border: none;
@@ -331,4 +330,17 @@ const ImgCont = styled.img`
   height: 90px;
   width: 90px;
   outline: none;
+`
+const HoverIcon = styled.a`
+  font-size: 1.5rem;
+  color: white;
+  outline: none;
+    text-decoration: none;
+    border: none;
+  &:hover {
+    border-radius: 10px;
+    transition: 300ms;
+    background-color: grey;
+    transform: scale(0.97);
+  }
 `
