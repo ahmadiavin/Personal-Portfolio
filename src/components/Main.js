@@ -8,6 +8,12 @@ import aboutPic from '../images/headshot.jpg'
 import minty1 from '../images/minty1.jpg'
 import minty2 from '../images/minty2.jpg'
 import minty3 from '../images/minty3.jpg'
+import minty4 from '../images/minty4.png'
+import peep1 from '../images/peep1.png'
+import peep2 from '../images/peep2.png'
+import peep3 from '../images/peep3.png'
+import peep4 from '../images/peep4.png'
+import peep5 from '../images/peep5.png'
 import reactSVG from '../images/reactSVG.svg'
 import chartJS from '../images/icons/chartJS.svg'
 import CSS from '../images/icons/CSS.svg'
@@ -120,35 +126,73 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Projects</h2>
+          <h3> Peep</h3>
+          <p>
+            Peep - a full stack chat application Team-developed and completed
+            within 2 weeks.
+            <p>
+              Users can add friends, direct message friends, or create Groups to
+              chat with multiple users. All users and groups can be searched.
+              Chat has video/image uploads and gifs. Groups feature admin
+              privileges. All chat history is stored in a PostgreSQL database.
+            </p>
+            <ul>
+              <li>
+                Built with only functional components via React Hooks. Full list
+                of tech: Redux, Styled Components, Express, Node, PostgreSQL,
+                bcrypt, Socket.io, Firebase, and GIPHY API.
+              </li>
+              <li>Created Wireframe design using Balsamiq Mockups</li>
+              <li>
+                Group Project with 2 fellow developers, participated in daily
+                stand up meetings
+              </li>
+              <li>
+                Employed proper version control and branch management via Git
+              </li>
+              <li>Self taught and integrated styling with Styled Components</li>
+              <li>
+                Features socket.io for web-communication and online statuses
+              </li>
+            </ul>
+          </p>
           <span className="image main">
             <LinkCont>
               <HoverIcon
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://github.com/ahmadiavin/Budgeting-Dashboard"
+                href="https://github.com/peepchat/peep"
               >
                 <FaGithub />
               </HoverIcon>
               <HoverIcon
                 target="_blank"
                 rel="noopener noreferrer"
-                href="http://www.minty.cash/"
+                href="https://www.peep.chat/#/"
               >
-                <FaGlobe />
+                View Site
               </HoverIcon>
             </LinkCont>
             <Carousel dynamicHeight dynamicWidth>
               <div>
-                <img src={minty1} alt="Minty1" />
+                <img src={peep1} alt="Peep1" />
               </div>
               <div>
-                <img src={minty2} alt="Minty2" />
+                <img src={peep2} alt="Peep2" />
               </div>
               <div>
-                <img src={minty3} alt="minty3" />
+                <img src={peep3} alt="Peep3" />
+              </div>
+              <div>
+                <img src={peep4} alt="Peep4" />
+              </div>
+              <div>
+                <img src={peep5} alt="Peep5" />
               </div>
             </Carousel>
           </span>
+
+          <br />
 
           <h3> Minty</h3>
           <p>A personal budgeting dashboard inspired by Mint</p>
@@ -165,7 +209,38 @@ class Main extends React.Component {
               meaningful way.
             </li>
           </ul>
-
+          <span className="image second">
+            <LinkCont className='mintyCont'>
+              <HoverIcon
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/ahmadiavin/Budgeting-Dashboard"
+              >
+                <FaGithub />
+              </HoverIcon>
+              <HoverIcon
+                target="_blank"
+                rel="noopener noreferrer"
+                href="http://www.minty.cash/"
+              >
+                View Site
+              </HoverIcon>
+            </LinkCont>
+            <Carousel className='caro2'>
+              <div>
+                <img src={minty1} alt="Minty1" />
+              </div>
+              <div>
+                <img src={minty2} alt="Minty2" />
+              </div>
+              <div>
+                <img src={minty3} alt="minty3" />
+              </div>
+              <div>
+                <img src={minty4} alt="minty4" />
+              </div>
+            </Carousel>
+          </span>
           {close}
         </article>
 
@@ -177,6 +252,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">About Me</h2>
+
           <span className="image main">
             <img
               src={aboutPic}
@@ -203,8 +279,42 @@ class Main extends React.Component {
             <br />
             I'm originally from Tampa, FL but I'm currently based in the
             Dallas/Fort Worth area. When i'm not coding you can find me watching
-            football, cooking up new pasta recipes, or weight lifting.
+            football, cooking up new pasta recipes, playing MMO's, or weight
+            lifting.
           </p>
+          <ul className="icons">
+            <li>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://ali-avin-resume.s3.us-east-2.amazonaws.com/Ali-Avin-Resume.pdf"
+                className="icon fa-file-pdf-o"
+              >
+                <span className="label">Resume</span>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/ali-avin/"
+                className="icon fa-linkedin"
+              >
+                <span className="label">LinkedIn</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/ahmadiavin"
+                className="icon fa-github"
+              >
+                <span className="label">GitHub</span>
+              </a>
+            </li>
+          </ul>
           {close}
         </article>
 
@@ -247,8 +357,17 @@ class Main extends React.Component {
             </ul>
           </form>
           <ul className="icons">
-            {/* <li><a href="#" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-            <li><a href="#" className="icon fa-facebook"><span className="label">Facebook</span></a></li> */}
+            <li>
+           
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://ali-avin-resume.s3.us-east-2.amazonaws.com/Ali-Avin-Resume.pdf"
+                className="icon fa-file-pdf-o"
+              >
+                <span className="label">Resume</span>
+              </a>
+            </li>
             <li>
               <a
                 target="_blank"
@@ -259,6 +378,7 @@ class Main extends React.Component {
                 <span className="label">LinkedIn</span>
               </a>
             </li>
+
             <li>
               <a
                 target="_blank"
@@ -335,12 +455,11 @@ const HoverIcon = styled.a`
   font-size: 1.5rem;
   color: white;
   outline: none;
-    text-decoration: none;
-    border: none;
+  text-decoration: none;
+  border: none;
   &:hover {
     border-radius: 10px;
     transition: 300ms;
-    background-color: grey;
     transform: scale(0.97);
   }
 `
