@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import aaLogo from "../images/AALogo.png"
 import {GiMaterialsScience} from 'react-icons/gi'
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
