@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const Footer = (props) => (
     <footer id="footer" style={props.timeout ? {display: 'none'} : {}}>
-        <p className="copyright"> &copy; Ali Avin - Built with: <a href="https://www.gatsbyjs.org/">Gatsby.js</a> </p>
+        <p className="copyright"> &copy; Ali Avin  </p>
     </footer>
 )
 
@@ -14,4 +14,3 @@ Footer.propTypes = {
 export default Footer
 
 
-//&copy; Ali Avin  <a href="https:/aliavin.com">Portfolio</a>

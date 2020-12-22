@@ -156,6 +156,7 @@ class Main extends React.Component {
               </li>
             </ul>
           </p>
+          <br />
           <span className="image main">
             <LinkCont>
               <HoverIcon
@@ -193,7 +194,8 @@ class Main extends React.Component {
           </span>
 
           <br />
-
+          <LineDiv />
+          <br />
           <h3> Minty</h3>
           <p>A personal budgeting dashboard inspired by Mint</p>
           <ul>
@@ -210,7 +212,7 @@ class Main extends React.Component {
             </li>
           </ul>
           <span className="image second">
-            <LinkCont className='mintyCont'>
+            <LinkCont className="mintyCont">
               <HoverIcon
                 target="_blank"
                 rel="noopener noreferrer"
@@ -226,7 +228,7 @@ class Main extends React.Component {
                 View Site
               </HoverIcon>
             </LinkCont>
-            <Carousel className='caro2'>
+            <Carousel className="caro2">
               <div>
                 <img src={minty1} alt="Minty1" />
               </div>
@@ -271,15 +273,11 @@ class Main extends React.Component {
             <br />
             <br />
             I enjoy building projects from the ground up and working with a team
-            to find innovative and creative solutions to technical problems. I
-            hold an AA in Business Management from St. Petersburg College and I
-            recently finished an immersive 13 week bootcamp at DevMountain
-            focusing on the SERN stack.
+            to find innovative and creative solutions to technical problems.
             <br />
             <br />
-            I'm originally from Tampa, FL but I'm currently based in the
-            Dallas/Fort Worth area. When i'm not coding you can find me watching
-            football, cooking up new pasta recipes, playing MMO's, or weight
+            When i'm not coding you can find me watching
+            football (Go Bucs!), cooking up new pasta recipes, playing MMO's, or weight
             lifting.
           </p>
           <ul className="icons">
@@ -287,7 +285,7 @@ class Main extends React.Component {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://ali-avin-resume.s3.us-east-2.amazonaws.com/Ali-Avin-Resume.pdf"
+                href="https://ali-avin-resume.s3.us-east-2.amazonaws.com/Ali+Ahmadiavin+Resume.pdf"
                 className="icon fa-file-pdf-o"
               >
                 <span className="label">Resume</span>
@@ -358,11 +356,10 @@ class Main extends React.Component {
           </form>
           <ul className="icons">
             <li>
-           
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://ali-avin-resume.s3.us-east-2.amazonaws.com/Ali-Avin-Resume.pdf"
+                href="https://ali-avin-resume.s3.us-east-2.amazonaws.com/Ali+Ahmadiavin+Resume.pdf"
                 className="icon fa-file-pdf-o"
               >
                 <span className="label">Resume</span>
@@ -462,4 +459,8 @@ const HoverIcon = styled.a`
     transition: 300ms;
     transform: scale(0.97);
   }
+`
+const LineDiv = styled.div`
+  width: 100%;
+  border-bottom: 1px solid grey;
 `
